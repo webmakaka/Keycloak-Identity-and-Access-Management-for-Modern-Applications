@@ -39,3 +39,11 @@ Fill in the form with the following values:
 • Client ID: myclient
 • Client Protocol: openid-connect
 • Root URL: http://localhost:8000
+
+<br/>
+
+![Application](/img/ch-02-pic-01.png?raw=true)
+
+<br/>
+
+![Application](/img/ch-02-pic-02.png?raw=true)

@@ -22,12 +22,12 @@ var keycloak = new Keycloak({ store: memoryStore });
 
 app.use(keycloak.middleware());
 
-app.get('/secured', keycloak.protect('realm:myrole'), function (req, res) {
+app.get('/secured', keycloak.protect('realm:myrole'), function (_req, res) {
   res.setHeader('content-type', 'text/plain');
   res.send('Secret message!');
 });
 
-app.get('/public', function (req, res) {
+app.get('/public', function (_req, res) {
   res.setHeader('content-type', 'text/plain');
   res.send('Public message!');
 });
