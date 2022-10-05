@@ -13,40 +13,41 @@ This is the code repository for [Keycloak - Identity and Access Management for M
 **Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications**
 
 ## What is this book about?
+
 Implementing authentication and authorization for applications can be a daunting experience, often leaving them exposed to security vulnerabilities. Keycloak is an open-source solution for identity management and access management for modern applications.
 
-This book covers the following exciting features: 
-* Understand how to install, configure, and manage Keycloak
-* Secure your new and existing applications with Keycloak
-* Gain a basic understanding of OAuth 2.0 and OpenID Connect
-* Understand how to configure Keycloak to make it ready for production use
-* Discover how to leverage additional features and how to customize Keycloak to fit your needs
+This book covers the following exciting features:
+
+- Understand how to install, configure, and manage Keycloak
+- Secure your new and existing applications with Keycloak
+- Gain a basic understanding of OAuth 2.0 and OpenID Connect
+- Understand how to configure Keycloak to make it ready for production use
+- Discover how to leverage additional features and how to customize Keycloak to fit your needs
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1800562497) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" alt="https://www.packtpub.com/" border="5" /></a>
 
-
-
 **Following is what you need for this book:**
 Developers, sysadmins, security engineers, or anyone who wants to leverage Keycloak and its capabilities for application security will find this book useful. Beginner-level knowledge of app development and authentication and authorization is expected.
-
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-14).
 
 ### Software and Hardware List
 
-| Chapter  | Software required                   | OS required                        |
-| -------- | ------------------------------------| -----------------------------------|
-| 1-14        | Keycloak 12                      | Windows, macOS, and Linux (Any) |
-| 1-14        | OpenJDK 8+                       | Windows, macOS, and Linux (Any) |
-| 1-14       | Node.js 14+                       | Windows, Mac OS, and Linux (Any) |
+| Chapter | Software required | OS required                      |
+| ------- | ----------------- | -------------------------------- |
+| 1-14    | Keycloak 12       | Windows, macOS, and Linux (Any)  |
+| 1-14    | OpenJDK 8+        | Windows, macOS, and Linux (Any)  |
+| 1-14    | Node.js 14+       | Windows, Mac OS, and Linux (Any) |
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](http://www.packtpub.com/sites/default/files/downloads/9781800562493_ColorImages.pdf).
 
+<br/>
 
+## Section 1: Getting Started with Keycloak
 
-## Errata
+<br/>
 
-* Page 6 (Paragraph 5, line 1): `$ docker run -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -p 8080 quay.io/keycloak/keycloak` _should be_`$ docker run -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -p 8080:8080 quay.io/keycloak/keycloak`
-
+• [Chapter 1 Getting Started with Keycloak](docs/Chapter01.md)
+• [Chapter 2. Securing Your First Application](docs/Chapter02.md)

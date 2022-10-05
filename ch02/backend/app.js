@@ -9,12 +9,14 @@ app.use(cors());
 
 var memoryStore = new session.MemoryStore();
 
-app.use(session({
-  secret: 'some secret',
-  resave: false,
-  saveUninitialized: true,
-  store: memoryStore
-}));
+app.use(
+  session({
+    secret: 'some secret',
+    resave: false,
+    saveUninitialized: true,
+    store: memoryStore,
+  })
+);
 
 var keycloak = new Keycloak({ store: memoryStore });
 
@@ -31,7 +33,9 @@ app.get('/public', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-  res.send('<html><body><ul><li><a href="/public">Public endpoint</a></li><li><a href="/secured">Secured endpoint</a></li></ul></body></html>');
+  res.send(
+    '<html><body><ul><li><a href="/public">Public endpoint</a></li><li><a href="/secured">Secured endpoint</a></li></ul></body></html>'
+  );
 });
 
 app.listen(3000, function () {
