@@ -6,9 +6,9 @@
 
 **Requirements:**
 
-• Keycloak up and running
-• A realm named: myrealm
-• A global role (Realm Roles): myrole
+• Keycloak up and running  
+• A realm named: myrealm  
+• A global role (Realm Roles): myrole  
 • A user with the preceding role. User -> Role mapping -> Assign role -> myrole
 
 <br/>
@@ -17,8 +17,8 @@ Clients -> Create
 
 Fill in the form with the following values:
 
-• Client type: openid-connect
-• Client ID: myclient
+• Client type: openid-connect  
+• Client ID: myclient  
 • Root URL: http://localhost:8000
 
 - Valid redirect URIs: http://localhost:8000/\*

@@ -6,16 +6,16 @@
 
 **Requirements:**
 
-• Keycloak up and running
-• A realm named myrealm
-• A global role named myrole
+• Keycloak up and running  
+• A realm named myrealm  
+• A global role named myrole  
 • A user with the preceding role
 
 Client with the following configuration:
 
-• Client ID: oidc-playground
-• Access Type: public
-• Valid Redirect URIs: http://localhost:8000/
+• Client ID: oidc-playground  
+• Access Type: public  
+• Valid Redirect URIs: http://localhost:8000/  
 • Web Origins: http://localhost:8000
 
 <br/>
@@ -30,11 +30,12 @@ $ npm start
 
 http://localhost:8000
 
+Discovery
+
+Issuer: http://localhost:8080/realms/myrealm
+
 Load OpenID Provider Configuration
 
-Authentication
+<br/>
 
-Send Authentication Request
-
-Send
-Token Request
+![Application](/img/ch-04-pic-01.png?raw=true)
