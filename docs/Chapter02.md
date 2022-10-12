@@ -1,15 +1,32 @@
 # Keycloak - Identity and Access Management for Modern Applications
 
-## Chapter 2. Securing Your First Application
+## Chapter 02. Securing Your First Application
 
 <br/>
 
-What you require before continuing is the following:
+**Requirements:**
 
 • Keycloak up and running
-• A realm named myrealm
-• A global role named myrole
-• A user with the preceding role
+• A realm named: myrealm
+• A global role (Realm Roles): myrole
+• A user with the preceding role. User -> Role mapping -> Assign role -> myrole
+
+<br/>
+
+Clients -> Create
+
+Fill in the form with the following values:
+
+• Client type: openid-connect
+• Client ID: myclient
+• Root URL: http://localhost:8000
+
+- Valid redirect URIs: http://localhost:8000/\*
+- Web origins: \*
+
+<br/>
+
+![Application](/img/ch-02-pic-01.png?raw=true)
 
 <br/>
 
@@ -22,7 +39,7 @@ $ npm start
 <br/>
 
 ```
-$ cd Keycloak-Identity-and-Access-Management-for-ModernApplications/ch2/backend/
+$ cd Keycloak-Identity-and-Access-Management-for-ModernApplications/ch02/backend/
 $ npm install
 $ npm start
 ```
@@ -33,17 +50,8 @@ http://localhost:8000
 
 <br/>
 
-Clients, and then click on Create
-
-Fill in the form with the following values:
-• Client ID: myclient
-• Client Protocol: openid-connect
-• Root URL: http://localhost:8000
-
-<br/>
-
-![Application](/img/ch-02-pic-01.png?raw=true)
-
-<br/>
-
 ![Application](/img/ch-02-pic-02.png?raw=true)
+
+<br/>
+
+![Application](/img/ch-02-pic-03.png?raw=true)

@@ -49,8 +49,8 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 <br/>
 
-• [Chapter 1 Getting Started with Keycloak](docs/Chapter01.md)
-• [Chapter 2. Securing Your First Application](docs/Chapter02.md)
+• [Chapter 01 Getting Started with Keycloak](docs/Chapter01.md)  
+• [Chapter 02. Securing Your First Application](docs/Chapter02.md)
 
 <br/>
 
@@ -58,9 +58,9 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 <br/>
 
-• Chapter 3. Brief Introduction to Standards
-• Chapter 4. Authenticating Users with OpenID Connect
-• Chapter 5. Authorizing Access with OAuth 2.0
-• Chapter 6. Securing Different Application Types
-• Chapter 7. Integrating Applications with Keycloak
+• Chapter 03. Brief Introduction to Standards  
+• [Chapter 04. Authenticating Users with OpenID Connect](docs/Chapter04.md)  
+• Chapter 5. Authorizing Access with OAuth 2.0  
+• Chapter 6. Securing Different Application Types  
+• Chapter 7. Integrating Applications with Keycloak  
 • Chapter 8. Authorization Strategies
