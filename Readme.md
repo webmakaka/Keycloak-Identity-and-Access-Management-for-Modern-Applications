@@ -1,4 +1,4 @@
-# Keycloak - Identity and Access Management for Modern Applications
+# [Book] Keycloak: Identity and Access Management for Modern Applications [ENG, 2021]
 
 ## YouTube Videos
 
