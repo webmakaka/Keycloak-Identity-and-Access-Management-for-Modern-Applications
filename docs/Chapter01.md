@@ -59,3 +59,29 @@ $ docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=adm
 // admin / admin
 http://localhost:8080
 ```
+
+
+<br/>
+
+### Running Keycloak on Docker (With persistance)
+
+```
+$ mkdir -p /opt/keycloak/data/
+$ chmod 777 /opt/keycloak/data/
+$ docker run --volume /opt/keycloak/data/:/opt/keycloak/data -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=change_me quay.io/keycloak/keycloak:19.0.2 start-dev
+```
+
+<br/>
+
+### Running Keycloak on Docker (With persistance in postgres)
+
+```
+docker run --name keycloak -p 8080:8080 \
+        -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=change_me \
+        -e KC_HTTP_ENABLED=true -e KC_HOSTNAME_STRICT=false -e KC_HOSTNAME_STRICT_HTTPS=false \
+        quay.io/keycloak/keycloak:19.0.2 \
+        start \
+        --auto-build \
+        --db=postgres \
+        --db-url=jdbc:postgresql://postgres_host:5432/db_keycloak --db-username=db_username_keycloak --db-password=PASS --http-enabled=true --http-port=8080
+```
