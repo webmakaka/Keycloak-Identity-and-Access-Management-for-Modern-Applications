@@ -47,10 +47,20 @@ http://localhost:8080
 
 <br/>
 
+
+### Keycloak on Docker
+
+<br/>
+
+```
+$ export KEYCLOAK_VERSION=20.0.3
+```
+
+
 ### Running Keycloak on Docker (Without persistance)
 
 ```
-$ docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:19.0.2 start-dev
+$ docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:${KEYCLOAK_VERSION} start-dev
 ```
 
 <br/>
@@ -60,15 +70,12 @@ $ docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=adm
 http://localhost:8080
 ```
 
-
-<br/>
-
 ### Running Keycloak on Docker (With persistance)
 
 ```
-$ mkdir -p /opt/keycloak/data/
-$ chmod 777 /opt/keycloak/data/
-$ docker run --volume /opt/keycloak/data/:/opt/keycloak/data -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=change_me quay.io/keycloak/keycloak:19.0.2 start-dev
+$ sudo mkdir -p /opt/keycloak/data/
+$ sudo chmod 777 /opt/keycloak/data/
+$ docker run --volume /opt/keycloak/data/:/opt/keycloak/data -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:${KEYCLOAK_VERSION} start-dev
 ```
 
 <br/>
@@ -76,10 +83,10 @@ $ docker run --volume /opt/keycloak/data/:/opt/keycloak/data -p 8080:8080 -e KEY
 ### Running Keycloak on Docker (With persistance in postgres)
 
 ```
-docker run --name keycloak -p 8080:8080 \
-        -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=change_me \
+$ docker run --name keycloak -p 8080:8080 \
+        -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin \
         -e KC_HTTP_ENABLED=true -e KC_HOSTNAME_STRICT=false -e KC_HOSTNAME_STRICT_HTTPS=false \
-        quay.io/keycloak/keycloak:19.0.2 \
+        quay.io/keycloak/keycloak:${KEYCLOAK_VERSION} \
         start \
         --auto-build \
         --db=postgres \
