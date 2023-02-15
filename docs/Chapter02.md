@@ -6,7 +6,6 @@
 
 **Requirements:**
 
-• Keycloak up and running  
 • Create a realm: myrealm  
 • Create a global role (Realm Roles): myrole  
 • Add a user (marley) with the preceding role. User -> Role mapping -> Assign role -> myrole
