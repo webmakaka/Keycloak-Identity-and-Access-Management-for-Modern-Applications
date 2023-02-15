@@ -6,7 +6,6 @@
 
 **Requirements:**
 
-• Keycloak up and running  
 • A realm named myrealm  
 • A global role named myrole  
 • A user with the preceding role
