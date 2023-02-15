@@ -12,6 +12,7 @@
 
 Client with the following configuration:
 
+• Client type: OpenID Connect 
 • Client ID: oidc-playground  
 • Access Type: public  
 • Valid Redirect URIs: http://localhost:8000/  
